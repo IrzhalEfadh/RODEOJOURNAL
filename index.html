@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RODEO</title>
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
   <style>
     @font-face {
       font-family: 'LaMarseillaise';
@@ -12,10 +12,10 @@
     }
 
     body {
-      background-color: #f2efeb;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      background-color: #f2efeb;
+      font-family: sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,59 +24,39 @@
 
     .container {
       text-align: left;
-      max-width: 600px;
+      padding: 40px;
     }
 
-    h1 {
-      font-family: 'Arial Black', sans-serif;
-      font-size: 40px;
-      margin-bottom: 10px;
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 8px;
     }
 
-    p.tagline {
+    .tagline {
       font-family: 'LaMarseillaise', cursive;
       font-size: 20px;
       margin-bottom: 30px;
     }
 
-    .take-a-ride-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #000;
-      color: #fff;
-      text-decoration: none;
+    .ride-button {
       font-family: 'LaMarseillaise', cursive;
-      font-size: 16px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
+      font-size: 18px;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
     }
 
-    .take-a-ride-btn:hover {
-      background-color: #444;
-      transform: scale(1.05);
-    }
-
-    img.logo {
-      width: 50px;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-
-    .title-wrap {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
+    .ride-button:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="title-wrap">
-      <img src="logo.png" alt="logo" class="logo">
-      <h1>RODEO</h1>
-    </div>
-    <p class="tagline">a sinner can still be a good lover</p>
-    <a href="journal.html" class="take-a-ride-btn">take a ride</a>
-  </div>
-</body>
-</html>
+    <div class="title">RODEO</div>
+    <div class="tagline">a sinner can still be a good lover</div>
+    <a class="r
