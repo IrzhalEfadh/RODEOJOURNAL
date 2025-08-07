@@ -5,58 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RODEO</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
-    @font-face {
-      font-family: 'LaMarseillaise';
-      src: url('1792LaMarseillaise.ttf') format('truetype');
-    }
-
     body {
       margin: 0;
       padding: 0;
       background-color: #f2efeb;
       font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
 
     .container {
-      text-align: left;
-      padding: 40px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      width: 60px;
+      margin-bottom: 20px;
     }
 
     .title {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 8px;
+      font-size: 48px;
+      font-family: 'Bebas Neue', sans-serif;
+      margin: 0;
     }
 
     .tagline {
-      font-family: 'LaMarseillaise', cursive;
-      font-size: 20px;
+      font-size: 16px;
+      margin-top: 10px;
       margin-bottom: 30px;
+      font-style: italic;
     }
 
-    .ride-button {
-      font-family: 'LaMarseillaise', cursive;
-      font-size: 18px;
-      color: #fff;
-      background-color: #000;
+    .btn {
       padding: 10px 20px;
+      background-color: black;
+      color: white;
       text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
+      border-radius: 5px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px;
+      transition: all 0.3s ease;
     }
 
-    .ride-button:hover {
+    .btn:hover {
       background-color: #333;
+    }
+
+    #ride {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: auto;
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    #ride h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #ride img {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="title">RODEO</div>
-    <div class="tagline">a sinner can still be a good lover</div>
-    <a class="r
+    <img src="logo.png" alt="Irzhal Efadh Logo" class="logo"/>
+    <h1 class="title">RODEO</h1>
+    <p class="tagline">a sinner can still be a good lover</p>
+    <a href="#ride" class="btn">take a ride</a>
+  </div>
+
+  <section id="ride">
+    <h1><img src="logo.png" alt="Logo Irzhal Efadh">BEHIND RODEO</h1>
+    <p>love has always been the thing i orbit around when i write songs. but RODEO is different. this time, i wasn’t chasing love, i was soaking in it. fully. finally. not wondering if i was enough. not hoping they’d stay. this album came from the warmth of arms that didn’t let go.</p>
+    <p>RODEO is about thirst. for touch, yes—but not just skin. it’s about craving presence. eyes that look and keep looking. a hand that lingers. a silence that feels like safety. there’s a sensuality that runs through the whole thing, but it’s not about lust. it’s about wanting to be felt deep, like someone’s memorizing your soul.</p>
+    <p>it sounds reckless. maybe a little sinful. but honestly, RODEO is the most romantic shit i’ve ever made. it’s messy, it’s bare, it’s loud in all the softest ways. a sinner can still be a good lover. especially when he finally knows what being loved back feels like.</p>
+  </section>
+</body>
+</html>
